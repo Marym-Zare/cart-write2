@@ -12,7 +12,7 @@
 
   onMount(() => {
     setTimeout(() => {
-      width = 150;
+      width = 120;
       top = "0px";
       left = "0px";
       angle = 360 + Math.random() * (Math.random() > 0.5 ? 1 : -1) * 20;
@@ -21,7 +21,7 @@
 </script>
 
 <div
-  class="transition-all duration-1000 ease-out relative h-[200px]"
+  class="transition-all duration-1000 max-w-[1/3] ease-out relative h-[150px] md:h-[200px]"
   style={`width: ${width}px;`}
 >
   <div
